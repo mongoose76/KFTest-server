@@ -18,7 +18,7 @@
 
       $.ajax({
         //url: 'http://mongoose76.ddns.net:8081/genInfo.txt',
-        url: 'genInfo.txt',
+        url: 'widgets/genInfo',
         data: null,
         success: success
       });
@@ -26,10 +26,10 @@
 
     function save() {
 
-        str = $('#summernote').summernote('code');
+        data = $('#summernote').summernote('code');
 
-        $.post( "save", function( data ) {
-          alert ( data );
+        $.post( "save", { widget: 'genInfo', data: data }, function( res ) {
+          alert ( res );
         });
     }
 
