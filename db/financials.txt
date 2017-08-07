@@ -35,6 +35,21 @@
           <ion-col width-80>{{company.Status}}</ion-col>
         </ion-row>
 
+        <ion-row class="row-even">
+          <ion-col width-20>State Debts</ion-col>
+          <ion-col width-80>{{company.HasInsolventa}}</ion-col>
+        </ion-row>
+
+        <ion-row class="row-odd">
+          <ion-col width-20>Bilant Debts</ion-col>
+          <ion-col width-80>{{company.HasInsolventa}}</ion-col>
+        </ion-row>
+
+        <ion-row class="row-even">
+          <ion-col width-20>Insolvency</ion-col>
+          <ion-col width-80>{{company.HasInsolventa}}</ion-col>
+        </ion-row>
+
         <ion-row class="row-odd">
           <ion-col width-20>CAEN Code Description</ion-col>
           <ion-col width-80>{{company.IdActivPrinc}}</ion-col>

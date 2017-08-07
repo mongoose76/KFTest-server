@@ -1,38 +1,48 @@
-<div id="summernote">Hello Summernote</div>
-
 <script>
 
-    $(document).ready(function () {
-
-      function success(res) {
-        // initialize summernote
-        $('#summernote').on('summernote.init', function () {
-          $('#summernote').summernote('codeview.activate');
+    function success(res) {
+            // initialize summernote
+            $('#summernote').on('summernote.init', function () {
+            $('#summernote').summernote('codeview.activate');
         }).summernote({
-          height: 600,
-          width: 800,
-          focus: true,                  // set focus to editable area after initializing summernote
-          lang: 'en-EN'
+            height: 600,
+            width: 800,
+            focus: true,                  // set focus to editable area after initializing summernote
+            lang: 'en-EN'
         }).summernote('code', res);
       }
 
-      $.ajax({
-        //url: 'http://mongoose76.ddns.net:8081/genInfo.txt',
-        url: 'widgets/genInfo',
-        data: null,
-        success: success
-      });
-    });
+     function widgetChange() {
+        $.ajax({
+            url: 'widgets/' + $("#widget-name").val(),
+            data: null,
+            success: success
+          });
+        }
 
-    function save() {
+     function save() {
 
         data = $('#summernote').summernote('code');
 
-        $.post( "save", { widget: 'genInfo', data: data }, function( res ) {
-          alert ( res );
+        $.post( "save", { widget: $("#widget-name").val(), data: data }, function( res ) {
+            alert ( res );
         });
-    }
+     }
 
+$(document).ready(function () {
+     $.ajax({
+         url: 'widgets/' + $("#widget-name").val(),
+         data: null,
+         success: success
+     });
+});
 </script>
+
+<select id="widget-name" onchange="widgetChange()">
+    <option value="genInfo">General Info</option>
+    <option value="financials">Financials</option>
+</select>
+
+<div id="summernote">Hello Summernote</div>
 
 <input type="button" class="btn btn-danger btn-lg" value="save" onclick="save()" />
