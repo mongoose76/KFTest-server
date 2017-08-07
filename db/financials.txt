@@ -1,7 +1,7 @@
 <ion-grid class="grid_row">
 
         <ion-row class="grid_row row-odd" style="border: solid 1px;">
-          <ion-col width-20>Company Name</ion-col>
+          <ion-col width-20>Name</ion-col>
           <ion-col width-80 style="border: solid 1px;">{{company.Name}}</ion-col>
         </ion-row>
 

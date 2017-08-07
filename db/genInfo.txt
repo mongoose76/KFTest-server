@@ -1,43 +1,58 @@
-<ion-grid class="grid_row">
+<table style="height: 100%; width: 100%">
 
-        <ion-row class="grid_row row-odd" style="border: solid 1px;">
-          <ion-col width-20>Company Name</ion-col>
-          <ion-col width-80 style="border: solid 1px;">{{company.Name}}</ion-col>
-        </ion-row>
+        <tr class="grid_row row-odd" style="border: solid 1px;">
+          <td>Name</td>
+          <td>{{company.Name}}</td>
+        </tr>
 
-        <ion-row class="grid_row row-even">
-          <ion-col width-20>Registration Number</ion-col>
-          <ion-col width-80>{{company.RegNo}}</ion-col>
-        </ion-row>
+        <tr class="grid_row row-even">
+          <td>Registration Number</td>
+          <td>{{company.RegNo}}</td>
+        </tr>
 
-        <ion-row class="grid_rowrow-odd">
-          <ion-col width-20>Fiscal Code</ion-col>
-          <ion-col width-80>{{company.FiscalCode}}</ion-col>
-        </ion-row>
+        <tr class="grid_rowrow-odd">
+          <td> Fiscal Code</td>
+          <td>{{company.FiscalCode}}</td>
+        </tr>
 
-        <ion-row class="row-even">
-          <ion-col width-20>Status</ion-col>
-          <ion-col width-80>{{company.State}}</ion-col>
-        </ion-row>
+        <tr class="row-even">
+          <td>Status</td>
+          <td>{{company.State}}</td>
+        </tr>
 
-        <ion-row class="row-odd">
-          <ion-col width-20>Google Address</ion-col>
-          <ion-col width-80>{{company.FiscalCode}}</ion-col>
-        </ion-row>
+        <tr class="row-odd">
+          <td>Google Address</td>
+          <td>{{company.FiscalCode}}</td>
+        </tr>
 
-        <ion-row class="row-even">
-          <ion-col width-20>Date Start</ion-col>
-          <ion-col width-80>{{company.DateStart}}</ion-col>
-        </ion-row>
+        <tr class="row-even">
+          <td>Date Start</td>
+          <td>{{company.DateStart}}</td>
+        </tr>
 
-        <ion-row class="row-odd">
-          <ion-col width-20>Status Online</ion-col>
-          <ion-col width-80>{{company.Status}}</ion-col>
-        </ion-row>
+        <tr class="row-odd">
+          <td>Status Online</td>
+          <td>{{company.Status}}</td>
+        </tr>
 
-        <ion-row class="row-odd">
-          <ion-col width-20>CAEN Code Description</ion-col>
-          <ion-col width-80>{{company.IdActivPrinc}}</ion-col>
-        </ion-row>
+        <tr class="row-even">
+          <td>State Debts</td>
+          <td>{{company.HasInsolventa}}</td>
+        </tr>
 
-      </ion-grid>
+        <tr class="row-odd">
+          <td>Bilant Debts</td>
+          <td>{{company.HasInsolventa}}</td>
+        </tr>
+
+        <tr class="row-even">
+          <td>Insolvency</td>
+          <td>{{company.HasInsolventa}}</td>
+        </tr>
+
+        <tr class="row-odd">
+          <td>CAEN Code Description</td>
+          <td>{{company.IdActivPrinc}}</td>
+        </tr>
+
+</table>
