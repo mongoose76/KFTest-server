@@ -1,16 +1,16 @@
 <ion-grid class="grid_row">
 
-        <ion-row class="grid_row row-odd" style="border: solid 1px;">
+        <ion-row class="row-odd">
           <ion-col width-20>Name</ion-col>
-          <ion-col width-80 style="border: solid 1px;">{{company.Name}}</ion-col>
+          <ion-col width-80>{{company.Name}}</ion-col>
         </ion-row>
 
-        <ion-row class="grid_row row-even">
+        <ion-row class="row-even">
           <ion-col width-20>Registration Number</ion-col>
           <ion-col width-80>{{company.RegNo}}</ion-col>
         </ion-row>
 
-        <ion-row class="grid_rowrow-odd">
+        <ion-row class="row-odd">
           <ion-col width-20>Fiscal Code</ion-col>
           <ion-col width-80>{{company.FiscalCode}}</ion-col>
         </ion-row>

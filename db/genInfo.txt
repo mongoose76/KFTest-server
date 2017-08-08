@@ -1,16 +1,16 @@
-<table style="height: 100%; width: 100%">
+<table style="border: 1px solid; height: 100%; width: 100%">
 
-        <tr class="grid_row row-odd" style="border: solid 1px;">
+        <tr class="row-odd">
           <td>Name</td>
           <td>{{company.Name}}</td>
         </tr>
 
-        <tr class="grid_row row-even">
+        <tr class="row-even">
           <td>Registration Number</td>
           <td>{{company.RegNo}}</td>
         </tr>
 
-        <tr class="grid_rowrow-odd">
+        <tr class="row-odd">
           <td> Fiscal Code</td>
           <td>{{company.FiscalCode}}</td>
         </tr>
