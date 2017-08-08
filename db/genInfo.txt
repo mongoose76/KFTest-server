@@ -22,7 +22,7 @@
 
         <tr class="row-odd">
           <td>Google Address</td>
-          <td>{{company.FiscalCode}}</td>
+          <td>{{company.County}} {{company.Town}}</td>
         </tr>
 
         <tr class="row-even">
